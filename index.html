@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Group4 - Live Music Finder</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon/gp4MusicIcon.ico">
+</head>
+
+<header class="hero">
+    </h1>
+    <h1><a href="./index.html">GROUP4 - Live Music Finder</a></h1>
+</header>
+
+<body id="content-wrap">
+    <main>
+        <div class="banner">
+            <h2 class="subtitle">Showing Dates for : <span id="artist-search-term"></span></h2>
+            <h2>
+                <div id="youTube-container" class="youTube-link">YouTube Search for : </div>
+            </h2>
+            <form action="./index.html">
+                <button class="back-btn">I Want to Search Again</button>
+            </form>
+        </div>
+
+
+        <div>
+            <div id="search-container" class="card">
+                <h2 class="card-header">Search by Artist</h2>
+                <form id="artist-form" class="card-body">
+                    <label class="form-label" for="artist"></label>
+                    <input name="artist" id="artist" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Find Shows</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="content-container">
+
+            <div id="dates-container" class="list-group">
+                <!-- Dates should be displayed in list order here -->
+            </div>
+
+            <div class="spotify" id="embed-iframe"><iframe id="spotify" style="border-radius:12px" src="" width="100%"
+                    height="380" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>This page is brought to you by Hiu Sum Jaime Yue, Spencer Cole & Ryan McCarthy</h4>
+        </div>
+        <div>
+            <h4><a href="https://hiusumjaimeyue.github.io/Professional-portfolio/" target="_blank"
+                    rel="noopener noreferrer">Jaime's Portfolio</a></h4>
+        </div>
+        <div>
+            <h4><a href="https://enceps.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Spencer's
+                    Portfolio</a></h4>
+        </div>
+        <div>
+            <h4><a href="https://ryanofeastview.github.io/personal-bio/" target="_blank"
+                    rel="noopener noreferrer">Ryan's Portfolio</a></h4>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

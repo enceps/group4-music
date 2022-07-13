@@ -1,0 +1,296 @@
+:root {
+  --primary: #ffa630;
+  --secondary: #D7E8BA;
+  --tertiary: #4da1a9;
+  --light-dark: #2e5077;
+  --dark: #611c35;
+  --border-radius: .3rem;
+}
+
+* {
+  color: var(--dark);
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--primary);
+}
+
+.app-title {
+  -webkit-text-stroke: .1px white;
+}
+
+header {
+  font-family: "Bangers";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  text-decoration: none;
+  -webkit-text-stroke: .1px white;
+}
+
+h1 {
+  font-size: 66px;
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+main {
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+
+h2 {
+  font-family: "Indie Flower";
+}
+
+h4 {
+  display: flex;
+  text-align: center;
+  font-family: "Indie Flower";
+  color: white;
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+}
+
+.youTube-link {
+  font-weight: bold;
+  margin-top: auto;
+  font-family: "Indie Flower";
+  font-size: 24px;
+}
+
+.single-banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spotify {
+  align-items: center;
+  width: 60%;
+  margin-left: 5px;
+}
+
+.hero {
+  padding: 3% 4%;
+  background-color: var(--dark);
+  color: var(--dark);
+  border-radius: var(--border-radius);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  border-bottom: var(--dark) 1px;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-header {
+  display: flex;
+  margin-right: 10px;
+  font-family: "Permanent Marker";
+}
+
+.form-input {
+  background-color: white;
+  padding: 6px 5px;
+  margin: 20px 5px;
+  font-size: 1.2rem;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+
+.btn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: block;
+  margin: 20px 5px;
+  border-radius: var(--border-radius);
+  color: white;
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 3px 3px var(--dark);
+}
+
+.btn:hover {
+  color: var(--primary);
+  background-color: var(--dark);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
+}
+
+.back-btn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: block;
+  margin: 20px 5px;
+  border-radius: var(--border-radius);
+  color: white;
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 3px 3px var(--dark);
+}
+
+.back-btn:hover {
+  color: var(--primary);
+  background-color: var(--dark);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
+}
+
+.subtitle,
+.youTube-link,
+.back-btn {
+  display: none;
+}
+
+.list-group {
+  display: inline-grid;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.list-item {
+  font-family: "Indie Flower";
+  color: white;
+  display: inline;
+  margin: 1px;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  background-color: var(--dark);
+  text-decoration: none;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 10px;
+  background-color: var(--dark);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: var(--border-radius);
+}
+
+footer a {
+  color: white;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*MEDIA QUERY for Desktop*/
+@media screen and (max-width: 850px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  h1,
+  h2,
+  form,
+  button {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .list-item {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .content-container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .spotify {
+    width: 100%;
+  }
+
+  .btn {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .back-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h4 {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+}
+
+/*MEDIA QUERY for Tablet*/
+@media screen and (max-width: 742px) {
+  header h1 {
+    font-size: 49px;
+  }
+}
+
+/*MEDIA QUERY for Mobile*/
+@media screen and (max-width: 490px) {
+  header h1 {
+    font-size: 33px;
+  }
+
+  footer h4 {
+    font-size: 10px;
+  }
+}
